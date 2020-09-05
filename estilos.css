@@ -39,6 +39,7 @@ h1{
 #adivinanza{
     background: url('img/fondo-adivinanza.jpg');
     background-size: cover;
+    
 }
 .background-overlay{
     background:rgba(255, 234, 167,0.6);

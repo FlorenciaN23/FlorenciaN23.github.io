@@ -25,18 +25,21 @@
     <div  id="adivinanza">
     <div class="background-overlay"> 
         <div class="container p-5">
-            <h1>¿Adivina adivinador?</h1>
-            <h2>Entre computadora y papeles </h2>
-            <h2>realizo mi tarea diaria</h2> 
-            <h2>con la agenda siempre lista</h2>
-            <h2>soy una buena..</h2>
-            <p>Para participar decinos tu nombre: <input type="text" id="nombre"></p>
-            <button class=" btn btn-warning" onclick="jugar_ahora()">Jugar</button>
-            <a href="novedades.html" class="btn btn-outline-warning"> Volver</a>
-            <p id="rdo"></p>
+          <div class=" text-center align-middle">
+              <h1 class="text-warning">Adivina adivinador</h1>
+              <h2>Entre computadora y papeles </h2>
+              <h2>realizo mi tarea diaria</h2> 
+              <h2>con la agenda siempre lista</h2>
+              <h2>soy una buena..</h2>
+              <p>Para participar decinos tu nombre: <input type="text" id="nombre"></p>
+              <button class=" btn btn-warning" onclick="jugar_ahora()">Jugar</button>
+              <a href="novedades.html" class="btn btn-outline-warning"> Volver</a>
+              <p id="rdo"></p>
+          </div>
         </div>
     </div>
 </div>
+<footer class="mt-1">Todos los derechos reservados &copy; 2020</footer>
 	<script>
 		function jugar_ahora() {
             var  respuesta;
