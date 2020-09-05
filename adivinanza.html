@@ -56,11 +56,12 @@
 				while(cant_intentos>0 && acerto!=true)
 				{
 					cant_intentos--;
-					respuesta= parseInt( prompt("Ingrese su respuesta"));
+					respuesta= prompt("Ingrese su respuesta");
 					if (respuesta==r_correcta)
 					{
 						alert("¡ACERTASTE!");
 						acerto=true;
+                        document.getElementById("rdo").innerHTML="La respuesta es: <strong> secretaria </strong>"
 					}
 					else if(cant_intentos==2)
 					{
@@ -68,17 +69,18 @@
 						alert("PISTA: suelo atender llamadas telefónicas");
 					}
                     else if (cant_intentos==1){
-                        alert("Te quedan " + cant_intentos + " intentos");
+                        alert("Te queda " + cant_intentos + " intento");
 						alert("PISTA: realizo trabajo administrativo");
                     }
                     else{
-                        alert ("Se acabaron los intentos; la respuesta es: SECRETARIA");
+                        alert ("Se acabaron los intentos");
+                        document.getElementById("rdo").innerHTML="La respuesta es: <strong> secretaria </strong>"
                     }
 					}
 
 				}
 
-				document.getElementById("rdo").innerHTML="El número era: <strong>" + numero_aleatorio + "</strong>"
+				
 			}
 
 
