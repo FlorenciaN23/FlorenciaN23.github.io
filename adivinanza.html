@@ -31,7 +31,9 @@
               <h4>realizo mi tarea diaria</h4> 
               <h4>con la agenda siempre lista</h4>
               <h4>soy una buena..</h4>
+              <br>
               <p>Para participar decinos tu nombre: <input type="text" id="nombre"></p>
+              <p> <b>Vas a tener 4 intentos para acertar ¡mucha suerte!</b> </p>
               <button class=" btn btn-warning" onclick="jugar_ahora()">Jugar</button>
               <a href="novedades.html" class="btn btn-warning"> Volver</a>
               <p class="mt-3" id="rdo"></p>
@@ -60,8 +62,8 @@
 			{
 				while(cant_intentos>0 && acerto!=true)
 				{
+				    respuesta= prompt("Ingresá tu respuesta: ");
 					cant_intentos--;
-					respuesta= prompt("Ingresá tu respuesta (tenes 4 intentos)");
 					if ((respuesta==r_correcta) /* || (respuesta==r_correcta2) || (respuesta==r_correcta3) ||(respuesta4==r_correcta3) */)
 					{
 						acerto=true;
