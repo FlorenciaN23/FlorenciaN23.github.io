@@ -25,7 +25,7 @@
     <div  id="adivinanza">
     <div class="background-overlay"> 
         <div class="container p-5">
-          <div class=" text-center align-middle">
+          <div class= "text-center align-middle">
               <h1 class="text-warning">Adivina adivinador</h1>
               <h4>Entre computadora y papeles </h4>
               <h4>realizo mi tarea diaria</h4> 
@@ -34,7 +34,7 @@
               <p>Para participar decinos tu nombre: <input type="text" id="nombre"></p>
               <button class=" btn btn-warning" onclick="jugar_ahora()">Jugar</button>
               <a href="novedades.html" class="btn btn-warning"> Volver</a>
-              <p id="rdo"></p>
+              <p class="mt-3" id="rdo"></p>
           </div>
         </div>
     </div>
@@ -46,10 +46,9 @@
 			var cant_intentos = 4;
 			var acerto = false;
 			var r_correcta = "secretaria";
-            var r_correcta2= "SECRETARIA";
-            var r_correcta3= "secretaria ";
-            var r_correcta4= "Secretaria";
-			var numero;
+            var r_correcta2 = "SECRETARIA";
+            var r_correcta3 = "secretaria ";
+            var r_correcta4 = "Secretaria";
 
 			var nombre=document.getElementById("nombre").value;
 
@@ -63,34 +62,33 @@
 				{
 					cant_intentos--;
 					respuesta= prompt("Ingresá tu respuesta (tenes 4 intentos)");
-					if (respuesta==r_correcta || respuesta==r_correcta2 || respuesta==r_correcta3 ||respuesta4==r_correcta3)
+					if ((respuesta==r_correcta) /* || (respuesta==r_correcta2) || (respuesta==r_correcta3) ||(respuesta4==r_correcta3) */)
 					{
-						alert("¡ACERTASTE!");
 						acerto=true;
-                        document.getElementById("rdo").innerHTML="La respuesta es: <strong> secretaria </strong>"
+						alert("¡ACERTASTE!");
+                        document.getElementById("rdo").innerHTML="La respuesta es: <strong> secretaria </strong>";
 					}
-                    else if (cant_intentos==3){
+                    else if (cant_intentos==3)
+                    {
                         alert("Te quedan " + cant_intentos + " intentos");
                     }
                     else if(cant_intentos==2)
 					{
 						alert("Te quedan " + cant_intentos + " intentos" +"\n PISTA: suelo atender llamadas telefónicas");
 					}
-                    else if (cant_intentos==1){
+                    else if (cant_intentos==1)
+                    {
                         alert("Te queda " + cant_intentos + " intento" + "\n PISTA: realizo trabajo administrativo" );
                     }
                     else{
                         alert ("Se acabaron los intentos");
                         document.getElementById("rdo").innerHTML="La respuesta es: <strong> secretaria </strong>"
                     }
-					}
-
 				}
 
+			}
 				
 			}
-
-
 	</script>
 
 </body>
