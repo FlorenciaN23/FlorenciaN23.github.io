@@ -7,7 +7,7 @@ header{
 #encabezado{
     background: url('img/logoa.png');
     background-size: cover;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 section{
     border: black;
